@@ -313,6 +313,7 @@ nav{
         justify-content: space-evenly;
         padding-left:2px;
         padding-right:2px;
+        width:auto;
     }
     .nav-toggle{
         display: inline;
