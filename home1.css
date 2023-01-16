@@ -519,6 +519,7 @@ nav{
     }
     nav{
         margin-left: 5px;
+        width: auto;
     }
     .nav-toggle{
         display: inline;
