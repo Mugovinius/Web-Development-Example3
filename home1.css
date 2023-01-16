@@ -520,8 +520,12 @@ nav{
     nav{
         margin-left: 5px;
     }
+    .nav-cart{
+        padding:0;
+    }
     .nav-toggle{
         display: inline;
+        padding:0;
     }
     .sidebar{
         width: 300px;
