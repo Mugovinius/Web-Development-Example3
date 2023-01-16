@@ -310,6 +310,9 @@ nav{
     }
     nav{
         margin-left: 5px;
+        justify-content: space-evenly;
+        padding-left:2px;
+        padding-right:2px;
     }
     .nav-toggle{
         display: inline;
