@@ -1,0 +1,607 @@
+html{
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    top: 0;
+}
+.logo{
+    max-width: 20%;
+}
+.links li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    font-size: 1.2rem;
+}
+.nav-cart{
+    padding: 20px;
+    border: transparent;
+    background: transparent;
+    margin-top: 20px;
+}
+.nav-toggle{
+    padding: 20px;
+    border: transparent;
+    background: transparent;
+    display: none;
+}
+.mylinks a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+}
+.mylinks li{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 20;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+    transform: translate(-100%);
+    transition: all 0.3s linear;
+    background: #fff;
+    z-index: 2;
+}
+.show-sidebar{
+    transform: translate(0);
+}
+.demo-toggle, .demo-main-toggle, .pages-toggle, .pages-main-toggle{
+    background: transparent;
+    border: transparent;
+}
+.my-demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.our-demo{
+    font-size: 1.2rem;
+}
+.toggle-main-demos{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+}
+.toggle-main-links{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    
+    padding-top: 10px;
+}
+.toggle-demos, .toggle-links{
+    display: none;
+}
+.toggle-main-demos a{
+    display: block;
+}
+.toggle-main-links a{
+    display: block;
+}
+.toggle-demos a{
+    display: block;
+    margin-left: 30px;
+}
+.toggle-links a{
+    display: block;
+    margin-left: 30px;
+}
+.show-demo-dropdown.toggle-demos{
+    display: block;
+}
+.show-pages-dropdown.toggle-links{
+    display: block;
+}
+.show-main-demo-dropdown.toggle-main-demos{
+    display: block;
+}
+.show-main-pages-dropdown.toggle-main-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.logo1{
+    max-width: 50%;
+}
+.switz{
+    width: 100%;
+    height:675px;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+.hero-text{
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    text-align: center;
+    color: #fff;
+}
+.hero-text p{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.hero-text h1{
+    font-size: 7rem;
+}
+@keyframes example{
+    from {rotate: 0deg;}
+    to {rotate: 360deg;}
+}
+.price{
+    width: 100px;
+    text-align: center;
+    top: 20%;
+    left: 80%;
+    position: absolute;
+    line-height: 100px;
+    display: inline-block;
+    height: 100px;
+    background-color: orangered;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+.more{
+    padding: 20px;
+    border-radius: 25px;
+    border: transparent;
+    font-weight: bold;
+}
+.arrow-left{
+    position: absolute;
+    z-index: 2;
+    top: 450px;
+    left:50px;
+    color: #fff;
+}
+.arrow-right{
+    position: absolute;
+    z-index: 2;
+    top: 450px;
+    right:50px;
+    color: #fff;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+.container-images{
+    position: relative;
+    width:500px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.pic1{
+    position: relative;
+    max-width: 70%;
+}
+.pic2{
+    position: absolute;
+    max-width: 70%;
+    top:40%;
+    left:5%;
+}
+.pic3{
+    position: absolute;
+    max-width: 70%;
+    left: 80%;
+    top:40%;
+}
+.pic4{
+    position: absolute;
+    max-width: 70%;
+    left: 80%;
+    top:70%;
+}
+.pic5{
+    position: absolute;
+    max-width: 70%;
+    left: 2%;
+    top:90%;
+}
+.container-text{
+    position: relative;
+    padding: 10px;
+    width: 400px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    left: 22%;
+    top:100px;
+}
+.container-text h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: orangered;
+    font-style: italic;
+}
+.container-text h2{
+    font-size: 2.5rem;
+}
+.container-text p{
+    font-size: 1.3rem;
+}
+.more-b{
+    color: #fff;
+    background-color: orangered;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 25%;
+    border: transparent;
+    margin: 10px;
+}
+.discounts{
+    margin-top: 200px;
+    text-align: center;
+    position: relative;
+}
+.discounts h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: orangered;
+    font-style: italic;
+}
+.deals-items{
+    top:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.deals-pic1{
+    position: relative;
+    width:650px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.discount-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.deals-pic2{
+    max-width: 90%;
+    position: relative;
+    margin-left: 20px;
+}
+.deals-pic3{
+    max-width: 90%;
+    position: relative;
+    margin-left: 20px;
+}
+.deals-pic4{
+    max-width: 90%;
+    position: relative;
+    margin-left: 20px;
+}
+.d-item-1, .d-item-2, .d-item-3{
+    position: relative;
+}
+.pic-text{
+    position: absolute;
+    bottom: 20px;
+    margin: 5px;
+}
+.pic1-text{
+    position: absolute;
+    bottom: 20px;
+    margin-left: 25px;
+}
+.pic-text h3{
+    color: orangered;
+    font-size: 1.5rem;
+}
+.pic-text p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.pic1-text h3{
+    color: orangered;
+    font-size: 1.5rem;
+}
+.pic1-text p{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.travels{
+    text-align: center;
+    margin-top:10%;
+}
+.travels h3{
+    font-size: 2rem;
+    font-weight: lighter;
+    color: orangered;
+    font-style: italic;
+}
+.btn-container{
+    text-align: center;
+    width: auto;
+}
+.tab-btn{
+    padding: 20px;
+    border: transparent;
+    border-radius: 25%;
+    font-size: larger;
+    margin:5px;
+    font-size: x-large;
+}
+.tab-btn.active{
+    background-color: orangered;
+    color: #fff;
+}
+.our-travels{
+    width:auto;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left:10px;
+    margin-right: 5px;
+    border-bottom: 2px solid orangered;
+    width: auto;
+}
+.travel-pic{
+    height: 100px;
+    max-width: 10%;
+    border-radius: 50%;
+    
+}
+.travel-body h4{
+    color: orangered;
+}
+.q-body{
+    width:800px;
+    margin-left: 5px;
+    font-size: 1.2rem;
+    display: none;
+}
+.show-content .q-body{
+    display: block;
+}
+.show-content .up-down{
+    transform: rotate(180deg);
+}
+.more-bt{
+    color: #fff;
+    background-color: orangered;
+    padding: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-radius: 25px;
+    border: transparent;
+    margin: 10px;
+}
+.guide-pic{
+    max-width: 10%;
+    border-radius: 50%;
+}
+.our-guide{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#h-line{
+    color: orangered;
+    border-bottom: 1px solid;
+}
+.up-down{
+    border: transparent;
+    color:orangered;
+    background: transparent;
+    position:static;
+}
+.guides{
+    text-align: center;
+    margin: 10px;
+    position: relative;
+}
+.guides h3{
+    font-weight: lighter;
+    font-size: 2rem;
+    color: orangered;
+}
+.guides-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.pic-guide{
+    max-width: 50%;
+    border-radius: 50%;
+}
+.guide-items{
+    text-align: center;
+}
+.guide-left{
+    top: 200px;
+    float: left;
+    color: orangered;
+    border: transparent;
+    background: transparent;
+}
+.guide-right{
+    top: 200px;
+    float: right;
+    color: orangered;
+    border: transparent;
+    background: transparent;
+}
+.social-media{
+    text-align: center;
+    color: orangered;
+}
+.posts-container{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.post-pic{
+    max-width: 100%;
+    border-radius: 25px;
+}
+.post-items{
+    padding: 10px;
+}
+.post-items a{
+    color: orangered;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.post-items p{
+    font-size: 1.2rem;
+}
+.screenshot{
+    width: 100%;
+}
+.footer{
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer span i{
+    color: orangered;
+}
+.footer div{
+    margin: 20px;
+}
+.logo2{
+    text-align: center;
+}
+.footer-links{
+    width:200px;
+}
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.news-cont{
+    display: flex;
+    flex-direction: row;
+}
+.news-pic{
+    max-width: 30%;
+}
+.author{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (max-width:676px){
+    .links{
+        display: none;
+    }
+    .logo{
+        max-width: 50%;
+    }
+    nav{
+        margin-left: 5px;
+    }
+    .nav-toggle{
+        display: inline;
+    }
+    .sidebar{
+        width: 300px;
+    }
+    .hero-text{
+        left: 15%;
+    }
+    .hero-text h1{
+        font-size: 4rem;
+    }
+    .price{
+        left: 70%;
+    }
+    .switz{
+        height: 650px;
+    }
+    .container{
+        flex-direction: column-reverse;
+    }
+    .container-images{
+        width: auto;
+    }
+    .pic1, .pic2, .pic3, .pic4, .pic5{
+        position: relative;
+        max-width: 95%;
+        left:2%;
+    }
+    .container-text{
+        left: 0;
+        top:0;
+        width: auto;
+    }
+    .deals-items{
+        flex-direction: column;
+        top:10px;
+    }
+    .deals-pic1{
+        width: auto;
+        max-width: 100%;
+    }
+    .pic-text, .pic1-text{
+        top:20px;
+        bottom: 0;
+    }
+    .deals-pic2, .deals-pic3, .deals-pic4{
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .discounts{
+        margin-top: 20px;
+    }
+    .q-body{
+        width: auto;
+    }
+    .travel-pic{
+        display: none;
+    }
+    .posts-container{
+        flex-direction: column;
+    }
+    .screenshot{
+        max-width:100%;
+        height: 200px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .news-cont{
+        flex-direction: column;
+    }
+    .news-pic{
+        max-width: 60%;
+    }
+}

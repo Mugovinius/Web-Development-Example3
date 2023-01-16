@@ -1,0 +1,357 @@
+html{
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 1;
+    top: 0;
+}
+.logo{
+    max-width: 20%;
+}
+.links li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    font-size: 1.2rem;
+}
+.nav-cart{
+    padding: 20px;
+    margin-top: 20px;
+    border: transparent;
+    background: transparent;
+}
+.nav-toggle{
+    padding: 20px;
+    border: transparent;
+    background: transparent;
+    display: none;
+}
+.mylinks a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+}
+.mylinks li{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 20;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+    transform: translate(-100%);
+    transition: all 0.3s linear;
+    background: #fff;
+    z-index: 2;
+}
+.show-sidebar{
+    transform: translate(0);
+}
+.demo-toggle, .demo-main-toggle, .pages-toggle, .pages-main-toggle{
+    background: transparent;
+    border: transparent;
+}
+.my-demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.our-demo{
+    font-size: 1.2rem;
+}
+.toggle-main-demos{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+}
+.toggle-main-links{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    
+    padding-top: 10px;
+}
+.toggle-demos, .toggle-links{
+    display: none;
+}
+.toggle-main-demos a{
+    display: block;
+}
+.toggle-main-links a{
+    display: block;
+}
+.toggle-demos a{
+    display: block;
+    margin-left: 30px;
+}
+.toggle-links a{
+    display: block;
+    margin-left: 30px;
+}
+.show-demo-dropdown.toggle-demos{
+    display: block;
+}
+.show-pages-dropdown.toggle-links{
+    display: block;
+}
+.show-main-demo-dropdown.toggle-main-demos{
+    display: block;
+}
+.show-main-pages-dropdown.toggle-main-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.logo1{
+    max-width: 50%;
+}
+.switz{
+    width: 100%;
+    height:675px;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+.hero-text{
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+    color: #fff;
+}
+.hero-text p{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.hero-text h1{
+    font-size: 7rem;
+}
+.video-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+.video-desc{
+    margin: 5px;
+    padding: 5px;
+}
+.video-desc h2{
+    font-size: 3rem;
+}
+.video-desc h3{
+    color: orangered;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 2rem;
+}
+.video-desc p{
+    font-size: 1.5rem;
+}
+.actual-video video{
+    width:650px;
+}
+.our-services{
+    text-align: center;
+    margin: 10px;
+}
+.our-services h3{
+    color: orangered;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 2rem;
+}
+.our-services h2{
+    font-size: 3rem;
+}
+.services-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.services-container div{
+    text-align: center;
+    margin:5px;
+}
+.services-container p{
+    font-size: 1.2rem;
+}
+.services-container img{
+    width: 45%;
+}
+.more-link{
+    color: orangered;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+.more-link :hover{
+    text-decoration:dashed;
+}
+.screenshot{
+    width: 100%;
+}
+.our-team{
+    text-align: center;
+    margin: 10px;
+}
+.our-team h3{
+    color: orangered;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 2rem;
+}
+.our-team h2{
+    font-size: 2rem;
+}
+.team-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+}
+.team-members{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+}
+.team-pic{
+    max-width: 80%;
+    border-radius: 50%;
+}
+.team-nav{
+    text-align: center;
+    margin-top: 25px;
+}
+.our-sponsors{
+    text-align: center;
+    margin: 10px;
+}
+.our-sponsors h3{
+    color: orangered;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 2rem;
+}
+.our-sponsors h2{
+    font-size: 2rem;
+}
+.sponsor-container{
+    display: grid;
+    grid-template-columns: repeat(5, 2fr);
+    margin: 10px;
+}
+.sponsor-container img{
+    width:70%;
+    margin: 20px;
+}
+.footer{
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer span i{
+    color: orangered;
+}
+.footer div{
+    margin: 20px;
+}
+.logo2{
+    text-align: center;
+}
+.footer-links{
+    width:200px;
+}
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.news-cont{
+    display: flex;
+    flex-direction: row;
+}
+.news-pic{
+    max-width: 30%;
+}
+.author{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (max-width:676px){
+    .links{
+        display: none;
+    }
+    .logo{
+        max-width: 50%;
+    }
+    nav{
+        margin-left: 5px;
+    }
+    .nav-toggle{
+        display: inline;
+    }
+    .sidebar{
+        width: 300px;
+    }
+    .hero-text{
+        left: 25%;
+    }
+    .hero-text h1{
+        font-size: 4rem;
+    }
+    .price{
+        left: 70%;
+    }
+    .switz{
+        height: 600px;
+    }
+    .video-container{
+        flex-direction: column;
+    }
+    .actual-video video{
+        width: 440px;
+    }
+    .services-container{
+        flex-direction: column;
+    }
+    .screenshot{
+        max-width:100%;
+        height: 200px;
+    }
+    .sponsor-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .news-cont{
+        flex-direction: column;
+    }
+    .news-pic{
+        max-width: 60%;
+    }
+}

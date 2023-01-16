@@ -1,0 +1,284 @@
+html{
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: fixed;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+    top: 0;
+}
+.logo{
+    max-width: 20%;
+}
+.links li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 20px;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+    font-size: 1.2rem;
+}
+.nav-cart{
+    padding: 20px;
+    border: transparent;
+    background: transparent;
+    margin-top: 20px;
+}
+.nav-toggle{
+    padding: 20px;
+    border: transparent;
+    background: transparent;
+    display: none;
+}
+.mylinks a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    text-align: left;
+}
+.mylinks li{
+    list-style-type: none;
+    padding-top: 10px;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 20;
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+    transform: translate(-100%);
+    transition: all 0.3s linear;
+    background: #fff;
+    z-index: 2;
+}
+.show-sidebar{
+    transform: translate(0);
+}
+.demo-toggle, .demo-main-toggle, .pages-toggle, .pages-main-toggle{
+    background: transparent;
+    border: transparent;
+}
+.my-demo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.our-demo{
+    font-size: 1.2rem;
+}
+.toggle-main-demos{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    padding: 5px;
+}
+.toggle-main-links{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    
+    padding-top: 10px;
+}
+.toggle-demos, .toggle-links{
+    display: none;
+}
+.toggle-main-demos a{
+    display: block;
+}
+.toggle-main-links a{
+    display: block;
+}
+.toggle-demos a{
+    display: block;
+    margin-left: 30px;
+}
+.toggle-links a{
+    display: block;
+    margin-left: 30px;
+}
+.show-demo-dropdown.toggle-demos{
+    display: block;
+}
+.show-pages-dropdown.toggle-links{
+    display: block;
+}
+.show-main-demo-dropdown.toggle-main-demos{
+    display: block;
+}
+.show-main-pages-dropdown.toggle-main-links{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.logo1{
+    max-width: 50%;
+}
+.switz{
+    width: 100%;
+    height:500px;
+    position: relative;
+    margin: auto;
+    z-index: 0;
+}
+.hero-text{
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 40%;
+    text-align: center;
+    color: #fff;
+}
+.hero-text p{
+    font-style: italic;
+    font-size: 1.5rem;
+}
+.hero-text h1{
+    font-size: 7rem;
+}
+.btn-container{
+    margin: 10px;
+    text-align: center;
+}
+.filter-btn{
+    border-radius: 25px;
+    border: transparent;
+    margin: 5px;
+    padding: 15px;
+    color: #fff;
+    background-color: orangered;
+}
+.tours-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
+    margin: 10px;
+}
+.tour-member{
+    position: relative;
+    margin: 10px;
+}
+.tour-pic{
+    max-width: 100%;
+    position: relative;
+    border-radius: 25px;
+}
+.tour-desc{
+    position: absolute;
+    bottom:20px;
+    left:50px;
+    color: #fff;
+    width: 300px;
+}
+.about-tour{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    color: orangered;
+}
+#price{
+    right: 10px;
+}
+.screenshot{
+    width: 100%;
+}
+.footer{
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer span i{
+    color: orangered;
+}
+.footer div{
+    margin: 20px;
+}
+.logo2{
+    text-align: center;
+}
+.footer-links{
+    width:200px;
+}
+.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.news-cont{
+    display: flex;
+    flex-direction: row;
+}
+.news-pic{
+    max-width: 30%;
+}
+.author{
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+}
+@media (max-width:676px){
+    .links{
+        display: none;
+    }
+    .logo{
+        max-width: 50%;
+    }
+    nav{
+        margin-left: 5px;
+    }
+    .nav-toggle{
+        display: inline;
+    }
+    .sidebar{
+        width: 300px;
+    }
+    .hero-text{
+        left: 25%;
+    }
+    .hero-text h1{
+        font-size: 4rem;
+    }
+    .price{
+        left: 70%;
+    }
+    .switz{
+        height: 500px;
+    }
+    .btn-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .tours-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .tour-desc{
+        bottom: 20px;
+    }
+    .screenshot{
+        max-width:100%;
+        height: 200px;
+    }
+    .footer{
+        flex-direction: column;
+    }
+    .news-cont{
+        flex-direction: column;
+    }
+    .news-pic{
+        max-width: 60%;
+    }
+}
