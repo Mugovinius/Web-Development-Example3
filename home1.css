@@ -515,11 +515,10 @@ nav{
         display: none;
     }
     .logo{
-        max-width: 50%;
+        max-width: 20%;
     }
     nav{
         margin-left: 5px;
-        width: auto;
     }
     .nav-toggle{
         display: inline;
